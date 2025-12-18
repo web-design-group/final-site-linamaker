@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>lin.custom</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./styles/styles.css" >
+    <link rel="stylesheet" href="./styles/portfolio-page.css" >
+  </head>
+  <body>
+    <header class="hero-header header-portfolio">
+      <div class="wrapper">
+        <div class="header-container">
+          <a href="./index.html" class="logo">lin.custom</a>
+          <a href="./portfolio.html" class="header-nav-link">Портфолио</a>
+          <a href="./about.html" class="header-nav-link">О студии</a>
+          <a href="./index.html#reviews" class="header-nav-link">Отзывы</a>
+          <a href="./contacts.html" class="header-nav-link">Контакты</a>
+          <a href="./profile.html" class="header-nav-link cabinet"
+            >Личный кабинет</a
+          >
+        </div>
+
+        <div class="hero-text">
+          <h1>Твой стиль.<br >Твоя <i>уникальность.</i></h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-portfolio">
+      <div class="wrapper">
+        <h2 class="section-title inter">Наши работы</h2>
+
+        <div class="portfolio-controls">
+          <div class="search-box">
+            <input type="text" class="search-input" id="searchInput" >
+            <svg
+              class="search-icon"
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect
+                width="37.9615"
+                height="37.9615"
+                fill="url(#pattern0_32_397)"
+              />
+              <defs>
+                <pattern
+                  id="pattern0_32_397"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_32_397"
+                    transform="scale(0.00195312)"
+                  />
+                </pattern>
+                <image
+                  id="image0_32_397"
+                  width="512"
+                  height="512"
+                  preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAIABJREFUeAHt3QnYdtd4L/B/BAlBEUKlobQxtiVFzURLmw4I1aOOqS1FW6IqkraXU6m2R3poG2NLolRNdR3KocaUFlFVpQMVmiAVEVNEg5Cp57nb5633+/J93zs9a4+/fV3v9U7Ps/e6f3uvte9n77XXSiwECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQGDqAgckuUGSWyS57fLr7knutfx6YJKfSnK/dX+707rXfleS6yTZb+pQ4iNAgAABAmMQODDJzZMcleSxSU5M8rIkb07y/iSfSnJBkv9Y0ddlSb6Q5KOLROE9SV6f5JQk/yvJw5LcNcmhSa4wBjxlJECAAAECQxe4dpIjkxyzOMGenOS0JOes6KS+quRg/Xq+meTjSd6S5BlJHr5IFo5IcuWhQysfAQIECBDoS+C6Se6b5OlJ3pTk0wM+0a8/6W/m54uS/HOSVyQ5NsmdF3HW7QkLAQIECBCYncBNlp+Qn5XkA0nqMvtmTqZTec3Fy7gr/uqHUAmQhQABAgQITE6gLufXie4FSc6e2cl+s0nLmUkqIahOim4bTK4KCIgAAQLzEKie87dfdpR7b5JLnPS3dIXj/CT/d5EsPWrZwXAeR40oCRAgQGC0ArdalPyEJGc44W/phL/RVYKPJDl++VjjaA8OBSdAgACBaQmsnfSrB/xGJzL/35nRpctHEZ+wuJ3y7dM6jERDgAABAmMQqE5r1aP9dCf93pKeuq3yF0nun+SKYzholJEAAQIExilQA91UB7WXJvm6E39vJ/49XUX57HJApBq90EKAAAECBFYicHCSX1uMele91Pd08vG34bjU45SnJqlhjvdfyd63EgIECBCYnUA9q1+PpX3ViX+Uic8nlh0Hv212R66ACRAgQGBbAjVxTl3mr8FqfLofv8FXloncd2zraPAmAgQIEJi8QE2uU+PtO+lP0+AbyzkVbjT5I1mABAgQILApgZrN7h1O/LNJfGpughqR0RWBTVUPLyJAgMD0BO6U5A1O/LM58e9+ZadmL6xE4AbTO7RFRIAAAQJ7Evie5Yx7u58Q/D7NS/8b7devLWdhvPqeDhZ/I0CAAIHxC9SEPNWrX+e+eZ7oN0oEvpCkRhj0+OD467oICBAg8J8CNUrco5NUA7/RScD/Gf19krupOwQIECAwboEfTvIvTvwSny0eAzWg0Kt0FBx35Vd6AgTmKXCtZQcvn+h9ot/JMVD9A2oWQrcF5tmOiJoAgZEJPHRml/trXoKaLveNSf4wydOW97LL4UcXHR5/IEmNkV8jG9YkRpUc1dfacqV1fzt0+bpbLIbUrccj75fk5xZzHxyX5P8keUmSv0ryqSQ1Gc9OTq5jem+ND3HLNTDfCRAgQGBYAt+Z5M0TPinVSbceW/ydxSyEP72I9Q6LE/71etwFlThUUvGDSR6zSC6et/j5XUnOn+g+qIGEnprkyj2a2zQBAgQIrBPYL8kvJLlgQieeTyd5ZZLHLzukjW08+xpt7z5JfnM5Oc+U9s2Hkxyx7vjzIwECBAj0IHDIRAbzqUv4z0ny4CSH9eDYepP1JMb3LxOa6lz3xZEnazWI0LGL2y01RbSFAAECBDoWuHeSz4z0RFKdy96+vFc/x7Hp68RZky5VB7tyGOvYDH/pSYGOa73NESAwa4EDkzw7ST2qNaaOZJ9fdtL7IfeRL3f8VufEn1mO0Fhj9Y9pv9bVjAdcLiJ/IECAAIGVChy+aGz/aUQniC8tZ6CrqxV1GdyysUCN2PjIJG8b2ZWB50vsNt65XkGAAIHtCFSnsi+P4ORfj8f9RZKjFz32q6e8ZfsC1cfjSYunHk4fwX6vqxZ/s0j46lFKCwECBAisQKB6+de94ksHfhKo/ggnLp6Vr8cRLasXqD4DNXvfVwd+HNSQ03Wbx0KAAAECOxCoy8FvGniDXwPj1NUJo8XtYEdv4a01iFH1wK9HJYfaV6A6NT5xCzF5KQECBAisE6iR184caCNfDXw9p3+7deX1Y7cCdXulRjv80ECPkUpOXr6YaviAbllsjQABAuMWuGeS8wbYsNewuyclmeOje0M+ou61HHBoiFcE3r0Y4+HgIeMpGwECBIYi8KDFPf8LB3byr4Ff6v6zDl5DOUr2XI67LEZOrGfzh5YInLG4YnSzPRfZXwkQIEBgrbPfkJ7vr2fSX7oc894eGo9ATWRUfTOGlAjUI6F3Gw+hkhIgQKAbgbqfWzPNDanBfu1yFr1uBGylhUA9ilmfvodyXNWVrQe2CNQ6CRAgMEaBml2tTrZDaaT/JclRY4RU5j0KVHL5hAHNUljjRNRARxYCBAjMWuCqSd46kJN/XaKtE4XH+aZ5SFZHvGclqRNw38lm3eb65Wkyi4oAAQIbC1xtQB22Xp3kOhsX2SsmIHCnxWX4mtK37ySgtv/UCXgKgQABAlsSuOZy2NS+G+FPJPnhLZXci6cgULcFanTJbwwgEajRIy0ECBCYhUCN7vcPPTe8dRn495LULQjLfAVqsKnTej4WKwl+xnx3gcgJEJiLwDWSvL/nBrc+9ddlYAuBErhCkuOS1FgPfV6ROsHuIECAwFQF6tN2389m173+uv1gIbC7wPcMYKrpui1hIUCAwKQE6lG/Pif1OX85bvykUAWzcoGrLJ8U6GswqtruL6w8KiskQIBATwLV4er1PV5efV+SG/YUu82OU+D+PY4bUNNeP3ycbEpNgACBbwnU8L59jvD3R2Zj+9bO8NOWBG7a4+OCNdvkj2+ptF5MgACBgQlUx6Y+OlbV412PGpiF4oxPoMaqeFVPx/DXFrfNfmB8ZEpMgACB/7qM2ce91LOS3NYOILBCgV/paQTBzyQ5bIVxWBUBAgSaC9y9p0FWanyB72genQ3MUaAGjPpKD1cDPuLJlTkebmImME6BWyQ5r4eG8s2LwX2uPk4ypR6JwPcm+bceju13JqknaSwECBAYrECN8ndmDw3ks03iM9hjYmoFq0vy/9jDMf68qUGKhwCB6QjUiGpdP+tffQzq/qyFQJcCNaLlqT0kAR4P7HIv2xYBApsW+K2OG8R6XlpP/03vHi9cscABSV7b8TF/oQ6uK96LVkeAwI4FfiJJnZC7euSvJvN5xI5LbQUEdiZwxSQv7fC4r/r1KVNX72yneTcBAqsTODzJlztsBGvSlgesrvjWRGBHAvsvHtV7UYfHfyUBb9fnZUf7zJsJEFiBwIEdT6BSJ/8fXUG5rYLAKgVqxMsadbKrK2C1naeuMgDrIkCAwFYFqvd9V41eXfb/H1stoNcT6EigkoBTOqwPdcvtHh3FZjMECBDYReBHknQ10l81dg/ZZet+ITA8gbod0OXQwZ9IUk8kWAgQINCZwHWTfLajTzuVZDyms8hsiMDOBGr2yzd2VDfq6lt1QrQQIECgE4G61PmGDhs4z/l3slttZIUCV0nyrg7ryP9cYdmtigABAnsV+IUOG7bqY2AhMEaBg5Oc3lFdOT/JjcaIpMwECIxHoBqZCzpq1Ooyat1TtRAYq8CNk5zbUX35yyR1dc5CgACBJgJdXfr/QJKDmkRgpQS6Fbh9kq91lAQ8rNvQbI0AgbkIPLSjRuysxTPV158LqjhnIfDAjp6Y+UKSQ2YhKkgCBDoTqPuZn+sgAaixzm/XWVQ2RKA7gd/uoP7UUwEv7y4kWyJAYA4C1ah0MeDPI+eAKcZZCnQ5W+Z9ZyksaAIEVi5QA/50cfKvoVQtBKYsUFfSPtlBfarbaFedMqTYCBBoL1CznX24gwbrfUlqelULgakL3LqjToEnTB1SfAQItBU4poOTf80keMO2YVg7gUEJ1MiWra+q1ZMH6tWgdrvCEBiPwLWTfLGDhurB4yFRUgIrE3h1B3XrlSsrrRURIDArged30EC9ZFaigiXwLYHrJDmngzp2929t0k8ECBDYWOCWSS5u3DiZyWzj/eAV0xa4dwfjA3wwST2BYCFAgMCmBN7c+OR/SZI7b6okXkRg2gK/37iuVV8DIwRO+xgSHYGVCdSJuXUHpWeurLRWRGDcAjVz4L82rnNnJKlpii0ECBDYp8A7GjdG9Rz01fZZAv8kMC+BIzu4FWCQrXkdU6IlsGWBuzU++deVhR/ecqm8gcD0BV7UuO7V4EDG2pj+cSRCAtsW+OvGjdCLt10ybyQwbYFvS/KZxvXvF6dNKDoCBLYr0HrI388nqbEFLAQI7FngQY0TgLOTHLjnTfsrAQJzFnhv48bnsXPGFTuBTQq0vgr3uE2Ww8sIEJiJwF0an/xrPoGaV8BCgMC+BW6TpB6TbfUkTo2/oS7uex/4L4FZCby2YYNTDVkNeGIhQGBzAic3ro8/tblieBUBAlMXuEnjTxyvmTqg+AisWOCQJOc3TALev+LyWh0BAiMVeG7DhuaiJN81UhfFJtCnwK82rJd1Va4e+bUQIDBjgeqV/9WGDc0LZmwrdAI7ETgoybkN6+brdlI47yVAYPwCv9awgfmG+cjHf4CIoFeBJzasn5cm+e5eo7NxAgR6E9iv8Rjkz+ktMhsmMA2Bemb/0w2TgKdPg0kUBAhsVaB65rd61OjCJIdutUBeT4DA5QR+qWE9rVsMJgm6HLk/EJi+wJ81bFhOmj6fCAl0IlDj97e8CvCATqKwEQIEBiNwnSR1j77FFYCLk9xoMJEqCIHxCxzbqK5W/X/T+HlEQIDAVgSe3LBBecVWCuK1BAhsKHD1huMCVGdACfuGu8ALCExH4PSGCcDtpsMkEgKDEXhmwzp7wmCiVBACBJoK1Am6xaX/Wuc7m5bcygnMV6A61X6zUd09Y76sIicwL4HfbdSIVAJwn3lRipZApwIva1h3j+g0EhsjQKBzgXr2/5ONGpHqqbx/5xHZIIH5CNTwva2u3hkTYD7HkUhnKnCHhg3IU2dqKmwCXQp8pFEdrmmC6wOChQCBiQr8fqPGQ0/iiR4wwhqcwJMa1eG6snD7wUWrQAQIrESgsvuzGjUeb1xJCa2EAIGNBA5uOIbHMzbauP8TIDBOgcruW90/PHqcJEpNYJQCr2pUlz0NMMrDQaEJbCzwG40ajfOSXHnjzXsFAQIrEvjxRnW5PiAcvqIyWg0BAgMS+JtGjcYLBxSjohCYg0BN4POlRvX5mDkAipHAnASuneSSRg3GveYEKVYCAxF4UaP6bG6AgexgxSCwKoEHN2osPp/kiqsqpPUQILBpgR9pVKe/nuSqmy6FFxIgMHiBP2nUWDx/8JErIIFpClTi/blG9fqoaZKJisD8BOrxv3MbNRQ/ND9OERMYjMDJjer1SYOJUEEIENiRwM0bNRIXJDlgRyXzZgIEdiLwgEZ1+0M7KZT3EiAwHIFHNmok/nw4ISoJgVkKXCPJRQ3qd3UY/rZZigqawMQE/rhBA1HPCz9mYk7CITBGgb9qVL/vPUYMZSZAYFeBjzVqIG6062b8RoBADwLHN6rfJ/QQi00SILBCgeskuaxBA1EzklkIEOhf4NYN6ndd4Tu1/9CUgACBnQjcr1Hj8OydFMp7CRBYmUA95VPjcax6no+vGuNjZfvIigj0IvD0Bg1DNTQ/3Us0NkqAwJ4EXteont9mTxvzNwIExiHw5kYNw2HjCF8pCcxC4LhG9fwRs9ATJIGJCpzdoGE4a6JWwiIwVoE7N6jndaXvmWMFUW4CcxeoCYBWfV+w1vfKucOKn8DABGpArgsb1Pe3DSxOxSFAYJMCRzZoECoBePwmt+9lBAh0J/CeBvW9hhC3ECAwQoEnNGgQKgG46wgtFJnA1AWe06i+HzJ1OPERmKLAKQ0ahBpT4JpTxBITgZELPLpBfa+E/14jd1F8ArMUOK1Bg/CpWUoKmsDwBe7YoL675Tf8/a6EBPYocE6DBuH1e9ySPxIg0LfAQUkubVDnf6/vwGyfAIGtCRzYaAjg39paMbyaAIEOBc5okAC8tsPy2xQBAisQuFmDhqAuBz54BWWzCgIE2gjUFbqqp6v8+lCbolorAQKtBI5acSOw1qDcoVWBrZcAgR0L/EGDen/+jktlBQQIdCrw2AYNQSUBHgnqdDfaGIEtCbR69NeTP1vaDV5MoF+BExskAF9LUjOPWQgQGKbAfRvU+0r8jxhmuEpFgMCeBF7WoCH4yJ425G8ECAxG4Hsb1PtKAO4zmAgVhACBDQXe0qAheOOGW/UCAgT6FLh6g3pfCcDP9hmUbRMgsDWBv2vQEPzh1org1QQI9CBwXoO6f2wPcdgkAQLbFKgR+ypzX+XX07ZZFm8jQKA7gY+vuN5XG1J9iiwECIxE4IIGjUD1MLYQIDBsgfc2qPsnDztkpSNAYE2gRgFc5Sf/tXU9ZG0DvhMgMFiBNzSo/38+2GgVjACBXQQObdAAVBJQgwtZCBAYtsCLG9T/dw87ZKUjQGBN4JYNGoBKAG6/tgHfCRAYrMAzG9T/fxpstApGgMAuArdp0ABUAnD4LlvxCwECQxR4SoP6/7EhBqpMBAhcXqDG61+7b7/K7ze8/Kb8hQCBgQk8uUH9/+TAYlQcAgT2InC3Bg1AJRLX28v2/JkAgeEItJgP4JzhhKckBAjsS+CHGiUA19rXRv2PAIFBCLSYCOyLg4hMIQgQ2FDgxxolAAdtuGUvIECgb4EatneVt/5qXTWuiIUAgREIHN2gAahG4EojiF0RCcxdoMbrWHUC8M25o4qfwFgEfrJBA1ANyhXGAqCcBGYs8KAG9f/SGXsKncCoBFrNCX7AqBQUlsA8BR7WIAG4cJ6UoiYwPoEasW/VlwBrfTXVqIUAgWELPKpB/T9/2CErHQECawL3bNAAVAJw8NoGfCdAYLACv9ig/n9+sNEqGAECuwjcpUEDUAnADXbZil8IEBiiwBMb1P9PDzFQZSJA4PICNWZ/i1sA33n5TfkLAQIDEzi+Qf0/c2AxKg4BAnsR+L4GDUAlFLfYy/b8mQCB4Qic0KD+/8twwlMSAgT2JXDTBg1AJQB33ddG/Y8AgUEIPKdB/f/gICJTCAIENhSoznotbgHcb8MtewEBAn0LvLJB/X9730HZPgECmxOoAXsuadAIPHJzm/cqAgR6FHhbg7pfSYWFAIGRCNTkHau+CnDcSGJXTAJzFqjL9auu+8+dM6jYCYxN4PQGjcDvjg1BeQnMUOCsBnW/OhZaCBAYicB7GjQCLxlJ7IpJYK4C+yX5eoO6f8xcQcVNYIwCr2/QCLxzjBDKTGBGAtdvUO/rdsKDZ2QoVAKjFzilQUPwqdGrCIDAtAXu2KDeVwJw72mziY7AtAR+o0FDUE8WXGlaTKIhMCmB+qS+6g6Atb7DJ6UkGAITF2gxJWg1BDeeuJvwCIxZ4NcbJACXJTlwzCjKTmBuAndr0BBUAvCDc4MUL4ERCbywQb0/e0TxKyoBAkm+o0FDUAnAY+gSIDBYgeqoW/V0lV/1RJGFAIERCdRogN9YcUNQjYoBQUZ0ECjq7ARaDAD2p7NTFDCBCQj8a4ME4F0TcBECgSkKtLrq97QpYomJwNQF3tIgAfhykhpsxEKAwLAEjmpQ3+uq388MK0ylIUBgMwLPaNQg3GgzG/caAgQ6FTi+UX2/badR2BgBAisReHijBuE+KymdlRAgsEqBule/ys5/ta4a++MqqyykdREg0I3AbRo0CNUo/GY3xbcVAgS2IPCxBvX9o1vYvpcSIDAggQOSXNSgUTh1QDEqCgECyXWS1IA9q74C8GdwCRAYr8A/N2gUvprkiuMlUXICkxM4ukE9r2TiKZOTEhCBGQm8olHD8P0zMhQqgaELtOrwe9+hB658BAjsXeDJjRKAx+99k/5DgEDHAqc1quc37DgOmyNAYIUCd27UMLxqhWW0KgIEti9QvfRbjPr5b9svkncSIDAEgeoIeGGDJOBLSfYfQoDKQGDmAq0GAKrbhxYCBEYuUJN5rLp3cK3vDiN3UXwCUxB4VqP6/UtTwBEDgbkL/G6jBuKEucOKn8AABFo8/18Jfo0jYiFAYOQC1ZO3xRWAvx25i+ITGLvAjRvV7a+4xTf2Q0P5CfyXQKtBQi5Ncl3IBAj0JlCX6Vsk92/tLSIbJkBg5QL/0KihMFPYyneVFRLYtECLGT8roaiJhSwECExE4MRGCcCbJuIjDAJjE6grexc3qtffNzYM5SVAYO8C92jUUNRcAwfvfbP+Q4BAI4FHN6rT5ywm/NqvUZmtlgCBHgRq7P7zGzUYj+ohHpskMHeBv2xUn0+ZO6z4CUxR4DWNGoy3TRFLTAQGLFCdb1td/n/ggONWNAIEtilQn9Rb9BiuhuiQbZbJ2wgQ2LpAq97/VZevufXieAcBAkMXOLTRnOGVVBw79OCVj8CEBD7QKJn/6wkZCYUAgd0EWs0adrqOQ7tJ+5VAG4Hqod/iSl6t83FtimytBAgMQeCYho3H3YYQoDIQmLjA8xvV4RrY6wYTtxMegVkLXD/JJY0akJfOWlbwBNoL1NS/X25Uf9/Rvvi2QIBA3wJ1n6/FJcSvJ7lW38HZPoEJCzyiUd2t9uCxE3YTGgECS4FWPYirEXkyZQIEmgnUBFwtkve6KuhJnma7zYoJDEeg5TPEZye58nBCVRICkxG4Z6OTfyUUxvKYzGEiEAIbC9QY/i0+SdQ6H7rx5r2CAIEtCvyFOrtFMS8nQGCPAvdv2Jj8o0cC92jujwS2K3DzJNVLv0XSXkOEX3W7BfM+AgTGJ1BzA3ymUYNSjdS9xkeixAQGK/DHDevqcwYbtYIRINBM4H83bFRObVZqKyYwL4HDknyjYV299bw4RUuAQAncpOFlxboKcCRmAgR2LPDChif/eqrAQoDATAVaTSlaCcB7ZmoqbAKrEvjOJN9smACYyntVe8p6CIxQ4CcbNi6VBNx7hCaKTGAoAi9uWD9rRMGrDSVQ5SBAoHuB/ReP7Z3RsJH5O08EdL9TbXESAocnqel5K5Fu8fX0SSgJggCBHQnUDGAtGpi1dR69o9J5M4F5Cry6Yb2s2wo1PbiFAIGZC9QzwF9s2NicmeSAmRsLn8BWBO6S5LKGdbJuLVgIECDwnwK/07CxqSsBx3EmQGBTAldIUrfO1q6gtfju0b9N7QovIjAPgeslubBho/PvSb59HpSiJLAjgeqZ3+Kkv7bOGgbcQoAAgV0ETm7c8Jyyy9b8QoDA7gLXWEzLe27jeliTClkIECCwi0DrZ45rLPM77rJFvxAgsF7gpMYn/3eu35ifCRAgsF7gDxs3QB/VIXA9t58J/LfADyS5pHH9u8d/b80PBAgQ2E3gBosOe19v3Aj9xm7b9CuBuQvU5Fwfalzv3jJ3ZPETILCxQOvLkPUM8q02LoZXEJiNwFMan/yrA+AdZqMpUAIEti1w/SRfa9wgnZakHneyEJi7wM0aP4FTJ/83zB1Z/AQIbF6ghglde2yo1XdjA2x+f3jlNAWulKRm5GtVx2q91a/Ac//TPH5ERaCJwNWTnNO4YbooSXV8shCYq0DrAbgqAXjBXHHFTYDA9gV+rnECUI3Tv5qRbPs7yDtHLXDXDnr91wBcdUvPQoAAgS0J1D3693eQBNSjhxYCcxK4ZpJPdVC3njQnVLESILBagfqU0nJSkrV7n/dfbbGtjcCgBVrO9LdWpz6e5MqDVlA4AgQGL/DKDj6p1KXKWwxeQgEJ7FzgVzqoT5UE/MTOi2oNBAjMXeCwJHWCXvtk0er7h/UHmPuhNvn4757k4g7q0hsnLylAAgQ6E3hcB41WJRavTbJfZ1HZEIHuBKoz3mc6qEdfTXLj7sKyJQIEpi5QHQJr8J5Wn/7Xr7cukVoITEmg7sV3VX8qWbcQIEBgpQJdjFhWiUANXHLflZbcygj0J1BXtF7cUfL8viT79xeqLRMgMGWBp3bUkF2Q5IgpQ4ptNgJd1RlzbMzmkBIogX4E6lJmddZbf8m+1c91v7Q6IFoIjFXgoR09Rlt18ISxIik3AQLjEahP5vVpo9WJf/16K9moQVMsBMYmUD3+v9FRPfmAZ/7HdngoL4HxChzbUcNWycCpSQ4cL5WSz1CgJt85r6M6UrfLbjpDYyETINCTQD0VUCfm9Z/WW/78liQH9BSrzRLYisDhSc7tsG48ciuF81oCBAisQuDQJF/ssKF7TZIrrqLg1kGgkUA9f99lnahxMywECBDoReDoDhNvh5wzAAARQklEQVSAusLwJ0nq6oOFwNAE6jL81zqsD2cnOXhoCMpDgMC8BJ7fYaNXScAfSQLmdYCNINqbd9jhr+pADSd8jxG4KCIBAhMXuFKSd3ecBLzC7YCJH1XjCe8mHX/yrwTAaJnjOT6UlMDkBWqc83M6TgL+n6cDJn9cDT3AGh2zq97+deKvL/NlDP2oUD4CMxS4c5KLOk4C3pTkKjO0FnL/ArdK8tmOj/ePJrlG/6ErAQECBC4v0NVc52ufhur7u5Jc+/JF8RcCzQSO7OGT//me92+2P62YAIEVCby8409FlQScnuS7VlR+qyGwL4Ea3rerkTDXEt1LTZC1r13ifwQIDEWg5gt4Rw9JQD1/fbehICjHJAWe0OHY/msn//r+y5PUFBQBApMUqOeTP9ZDEvD1xWRFD5ykqKD6FKiktqspfdef+Ovnf0pSUwpbCBAgMBqBejzqcz0kAZctng440bzoozlOhl7QGyQ5rYfjeH0i8EJJwNAPE+UjQGB3gdv38Iz0WsP5ziSH7F4gvxPYgkDdUur68da143f378+VBGxhz3kpAQKDEKhL8pf09Anqk0m+fxAKCjE2gScuR9zb/UTc5++uBIztKFJeAgTysz11nqrGuvoFPMY+ILBJgWsmeXVPCetmkgtXAja5I72MAIHhCPxSz41qTSlcIxZaCOxN4E5Jzuz5ON1MEuBKwN72oL8TIDBYgbqsupkGrtVrqlPijw1WR8H6Eqhppk/o8VbVdo53VwL6OlpslwCBbQv8ds9JQD0l8PuGEN72/pvaG2s8/7/t+ZjcTgJQ73ElYGpHo3gIzEDgGQNocM9YDCP8gzOwFuKeBWoWy6ckuXAAx+J2E4B6nysBe96//kqAwIAFjh9Iw1sdvmrgIst8BI5I8vcDOf52cvJfe68rAfM5dkVKYDICx/b4dMBa41nfa1a3B01GVSB7E6iZ9E4a2b3+9cfpvn6WBOxtr/s7AQKDFahH9Gqyk301bl39731J7jhYKQXbrsAVkjy8h+l7uzpu17YjCdjuEeJ9BAj0JlCNc1+DBa01nmvfKxk5Ocn1etOw4VUK3H1il/vXjtO9fZcErPLosS4CBDoR+PEkFwzkSkA1rl9J8qtJDuokehtZtcBNBz6gz95O4Kv4uyRg1UeT9REg0Fzge5P824CSgGqMv7DoKV4dFq/SPHobWIXAjZK8YIDD+K7ixL6VdUgCVnE0WQcBAp0K1OxrHxxYElANbw0iVInAgZ1q2NhmBQ5L8qzFVZtvDPDY+eeeyiQJ2OzR43UECAxGoHprv62nRnOjT1mfTlJPL1QZLf0L3DLJiwZ64q/+JDX65X5Jnt3T8SwJ6P8YVQICBLYoUAO1PK+nRnOjJKD+X30EakCj+uRp6V7gyCRvHMhjpHs6Xur4uO86FknAOgw/EiBAYDMC9YRAzei3p0Z2CH+7KMnLktx1M8F4zY4ErprkEUn+bsDHQx2TH05SnRB3XyQBu4v4nQABAhsI3GYks7R9bNlP4JAN4vHvrQnUZf4Tk3xx4Cf+Ovm/boPbQ5KAre17ryZAgECuneTNIzgB1EmgOqK9avFJtR5tvLJ9ty2BSqJqCukPjGSfX5zkV5b3+zcKWBKwkZD/EyBAYDeBGtFtbNO2nrfspPYjSWraWcveBWpOhp9f3E45dUADQ23mNtPZSe6x97D2+B9JwB5Z/JEAAQL7FrjLYmjXT4zkk+H6E0iNKVCjDD5gg8vE+45+Wv+9yfKT/luSVH+K9V5j+Pk1ix7+dXVqO4skYDtq3kOAwOwF6jG8Px3hCWPtpFYnu3cu+wzcekZ7swZUOmo5KU/1mVjzGNv3GrXykSvYb30nAXVVzUKAAIFRCjwwyZdGfCJZO/HVY2NvX+yBusVxrwkNOFSJWsVTcVV8F05gX9VTCHvq5b/dCiQJ2K6c9xEgMHuBGv71rRM4sawlA/W9OhK+J8lzkzx6OUvh1Qa+pw9dfro/bnl15vSJ7ZNvLvwrkakxKla9SAJWLWp9BAjMSqDGDBjDo2LrT/Rb+fmyJGcsHzX7gyTHLGa6u0+SmkOhq+Tg+stk5MGLe/a/nqRGmnvHRK7C7GtfvDfJrRrXJklAY2CrJ0Bg2gLXTfLyiX3y3NeJaf3/6omDuq9eJ6s3JHnJIjF4ZpJfW/Y1ePzyakJdUfip5ddD1v3tScvXPXU5dG051pWVv09y1sAHZFrvsMqf/32RVD4uSVf3yiUB026fREeAQAcCP7Y8aa3yZGBd4+20t519V0MN37CDY3X3TUgCdhfxOwECBLYoUEPH1gx+1WN7OycA75mn28eXV0e2eLit9OWSgJVyWhkBAnMVqM5pLx3wxDESjWEkGpUoVie/AwZSUSQBA9kRikGAwPgFbr+8P+6EO4wT7lD2Q03bWwni9QZ4iEsCBrhTFIkAgXEKVGeuhy170w/lBKQc/SUk1Vly6AMxSQLG2dYoNQECAxWocfnrscF6rM4JeH4GNcbC3Qd6bO6pWJKAPan4GwECBHYgUIO61GNxNaGLRGD6BnXiv+cOjpc+3yoJ6FPftgkQmKzAgcvnvc+UCEwuEaoBlGqyobGe+NdXOknAeg0/EyBAYIUC1UegRtc7TSIw+kSghu6tzn01UuKUFknAlPamWAgQGKTAbZcnkEskA6NKBmr0vmclOWyQR9VqCiUJWI2jtRAgQGCfAt+9mJ3vxCSflQgMOhH42yQ/3+G8CPs8aDr4pySgA2SbIECAQAnsv5za9tVJLpYMDCIZOD/JC5IcMdNDtJKA5/R0LNZEUF3NkTDT3StsAgSGKFBjxNeocTX5jqcHujWoWzJvW47ncJUhHhwdl0kS0DG4zREgQGBNoKaJlQy0TQJqtL56hO8JSWpKYsuuApKAXT38RoAAgc4FarjhZxhgaCVXReo2y18nqWmMv73zPTm+DUoCxrfPlJgAgYkK3GQ5yFD1Gaie6W4VbGzwuSTlVaM0Xmuix0XLsCQBLXWtmwABAtsQqHvVRyU5KcmHkni08L+SgUqM3rqctnnoY/JvY7f38hZJQC/sNkqAAIHNCRyU5K7LE19NSPPlmVwhOCdJxXv8Mv4aitmyeoE+k4CTPR2w+h1qjQQITFegJie6TZJHLJ5jf+ayl/u5I04K6grH6cvL+U9ZXPW4X5J6csLSnYAkoDtrWyJAgMDKBQ5Zjj1QHeH+YDF17Z8vbyHU8+999ymoMfZrEqXqnf+ni099T0vyM0lul8TjeSs/FLa1QknAtti8iQABAsMWqE5yNQBOzV1QJ95jlyMWnrK4mvC6JO9eJgs1wVF91eX385ZfdfKuBKLGy1/721nL1308yQcWl+hPTfLKJM9N8puL1x2T5CGLeRLuneSmSQ4YNo/SLQUkAQ4FAgQIECAwUwFJwEx3vLAJECBAgIAkwDFAgAABAgRmKiAJmOmOFzYBAgQIEJAEOAYIECBAgMBMBSQBM93xwiZAgAABApIAxwABAgQIEJipgCRgpjte2AQIECBAQBLgGCBAgAABAjMVkATMdMcLmwABAgQISAIcAwQIECBAYKYCkoCZ7nhhEyBAgAABSYBjgAABAgQIzFRAEjDTHS9sAgQIECAgCXAMECBAgACBmQpIAma644VNgAABAgQkAY4BAgQIECAwUwFJwEx3vLAJECBAgIAkwDFAgAABAgRmKiAJmOmOFzYBAgQIEJAEOAYIECBAgMBMBSQBM93xwiZAgAABApIAxwABAgQIEJipgCRgpjte2AQIECBAQBLgGCBAgAABAjMVkATMdMcLmwABAgQISAIcAwQIECBAYKYCkoCZ7nhhEyBAgAABSYBjgAABAgQIzFRAEjDTHS9sAgQIECAgCXAMECBAgACBmQpIAma644VNgAABAgQqCXhukv/o4evkJFewCwgQIECAAIF+BCQB/bjbKgECBAgQ6F1AEtD7LlAAAgQIECDQj4AkoB93WyVAgAABAr0LSAJ63wUKQIAAAQIE+hGQBPTjbqsECBAgQKB3gT6TgFM8HdD7/lcAAgQIEJixgCRgxjtf6AQIECAwbwFJwLz3v+gJECBAYMYCkoAZ73yhEyBAgMC8BSQB897/oidAgACBGQtIAma884VOgAABAvMWkATMe/+LngABAgRmLCAJmPHOFzoBAgQIzFtAEjDv/S96AgQIEJixgCRgxjtf6AQIECAwbwFJwLz3v+gJECBAYMYCkoAZ73yhEyBAgMC8BSQB897/oidAgACBGQtIAma884VOgAABAvMWkATMe/+LngABAgRmLCAJmPHOFzoBAgQIzFtAEjDv/S96AgQIEJixgCRgxjtf6AQIECAwbwFJwLz3v+gJECBAYMYCkoAZ73yhEyBAgMC8BSQB897/oidAgACBGQtIAma884VOgAABAvMWkATMe/+LngABAgRmLCAJmPHOFzoBAgQIzFtAEjDv/S96AgQIEJixgCRgxjtf6AQIECAwbwFJwLz3v+gJECBAYMYCkoAZ73yhEyBAgMC8BSQB897/oidAgACBGQtIAma884VOgAABAvMWqCTgj5L8Rw9fJ86bXvQECBAgQKBfgb6SgMuSPKjf0G2dAAECBAjMW6Cv2wGfT3L1edOLngABAgQI9CtQScALergVcFy/Yds6AQIECBAgUEnA8zpOAj6InQABAgQIEOhfoOsrAdUX4Hr9h60EBAgQIECAQNdXAu6InAABAgQIEBiGQJdXAu43jJCVggABAgQIECiBrq4EHImbAAECBAgQGJZAF1cCbjqskJWGAAECBAgQKIGWVwLOWa6fNAECBAgQIDBAgVZXAmooYgsBAgQIECAwYIFVXwm4OMnNBhyvohEgQIAAAQJLgVVeCXgWVQIECBAgQGA8Aqu4EvDeJAeMJ2QlJUCAAAECBEqgkoCnJ6mR/LY6nfBpSQ7BSIAAAQIECIxXoKb0PXeTScBFSU7yyX+8O1vJCRAgQIDAeoGDkhyfpCb22dMVgc8kqd7+373+TX4mQIAAAQIEpiNQl/bvnOToJDXCXw3yU7cLLAQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIEJipwP8HnKv9nVQkecMAAAAASUVORK5CYII="
+                />
+              </defs>
+            </svg>
+          </div>
+
+          <div class="filter-buttons">
+            <button
+              class="filter-btn filter-sort"
+              type="button"
+              aria-label="Сортировка"
+            >
+              <svg
+                width="49"
+                height="49"
+                viewBox="0 0 49 49"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.7473 6.52002C14.6061 6.37855 14.4385 6.26631 14.254 6.18973C14.0694 6.11315 13.8715 6.07373 13.6717 6.07373C13.4719 6.07373 13.2741 6.11315 13.0895 6.18973C12.905 6.26631 12.7373 6.37855 12.5962 6.52002L3.48163 15.6346C3.19638 15.9199 3.03613 16.3067 3.03613 16.7101C3.03613 17.1135 3.19638 17.5004 3.48163 17.7856C3.76687 18.0709 4.15375 18.2311 4.55715 18.2311C4.96055 18.2311 5.34742 18.0709 5.63267 17.7856L12.1526 11.2626V41.0157C12.1526 41.4186 12.3127 41.805 12.5976 42.0898C12.8825 42.3747 13.2688 42.5348 13.6717 42.5348C14.0746 42.5348 14.461 42.3747 14.7459 42.0898C15.0308 41.805 15.1908 41.4186 15.1908 41.0157V11.2626L21.7108 17.7856C21.996 18.0709 22.3829 18.2311 22.7863 18.2311C23.1897 18.2311 23.5766 18.0709 23.8618 17.7856C24.1471 17.5004 24.3073 17.1135 24.3073 16.7101C24.3073 16.3067 24.1471 15.9199 23.8618 15.6346L14.7473 6.52002ZM33.8848 42.1094C34.168 42.3823 34.5459 42.5348 34.9391 42.5348C35.3323 42.5348 35.7102 42.3823 35.9933 42.1094L45.1079 33.2987C45.2516 33.1602 45.3665 32.9948 45.4462 32.812C45.526 32.6291 45.5689 32.4323 45.5725 32.2328C45.5762 32.0334 45.5406 31.8352 45.4676 31.6495C45.3947 31.4638 45.2859 31.2943 45.1474 31.1507C45.009 31.007 44.8436 30.8921 44.6607 30.8124C44.4779 30.7326 44.2811 30.6897 44.0816 30.686C43.8821 30.6824 43.6839 30.718 43.4982 30.791C43.3126 30.8639 43.1431 30.9727 42.9994 31.1112L36.4582 37.4336V7.59858C36.4582 7.19569 36.2981 6.8093 36.0133 6.52442C35.7284 6.23953 35.342 6.07948 34.9391 6.07948C34.5362 6.07948 34.1498 6.23953 33.8649 6.52442C33.58 6.8093 33.42 7.19569 33.42 7.59858V37.4336L26.8818 31.1142C26.7389 30.9736 26.5696 30.8626 26.3837 30.7877C26.1977 30.7127 25.9988 30.6754 25.7983 30.6777C25.5978 30.6801 25.3998 30.7221 25.2157 30.8013C25.0315 30.8805 24.8649 30.9955 24.7253 31.1394C24.5858 31.2834 24.4761 31.4535 24.4026 31.64C24.3292 31.8266 24.2934 32.0258 24.2973 32.2262C24.3011 32.4267 24.3447 32.6244 24.4253 32.8079C24.506 32.9914 24.6222 33.1572 24.7672 33.2956L33.8848 42.1094Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+            <div class="filter-btn-wrapper">
+              <button class="filter-btn filter-dropdown inter" type="button">
+                Цвет
+                <svg
+                  width="30"
+                  height="15"
+                  viewBox="0 0 30 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_32_262)">
+                    <path
+                      d="M21.7752 3.06498L23.1002 4.39123L15.8789 11.615C15.7632 11.7314 15.6256 11.8238 15.4741 11.8869C15.3225 11.95 15.16 11.9824 14.9958 11.9824C14.8317 11.9824 14.6691 11.95 14.5176 11.8869C14.366 11.8238 14.2284 11.7314 14.1127 11.615L6.8877 4.39123L8.2127 3.06623L14.9939 9.84623L21.7752 3.06498Z"
+                      fill="black"
+                      fill-opacity="0.25"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_32_263">
+                      <rect
+                        width="15"
+                        height="30"
+                        fill="white"
+                        transform="translate(30 1.31134e-06) rotate(90)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="filter-btn__dropdown-wrapper inter">
+                <ul class="filter-btn__dropdown">
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="blue" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Синий</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="black" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Черный</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="red" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Красный</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="green" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Зеленый</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="yellow" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Желтый</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter-btn-wrapper">
+              <button class="filter-btn filter-dropdown" type="button">
+                Тип предмета
+                <svg
+                  width="30"
+                  height="15"
+                  viewBox="0 0 30 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_32_262)">
+                    <path
+                      d="M21.7752 3.06498L23.1002 4.39123L15.8789 11.615C15.7632 11.7314 15.6256 11.8238 15.4741 11.8869C15.3225 11.95 15.16 11.9824 14.9958 11.9824C14.8317 11.9824 14.6691 11.95 14.5176 11.8869C14.366 11.8238 14.2284 11.7314 14.1127 11.615L6.8877 4.39123L8.2127 3.06623L14.9939 9.84623L21.7752 3.06498Z"
+                      fill="black"
+                      fill-opacity="0.25"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_32_264">
+                      <rect
+                        width="15"
+                        height="30"
+                        fill="white"
+                        transform="translate(30 1.31134e-06) rotate(90)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="filter-btn__dropdown-wrapper inter">
+                <ul class="filter-btn__dropdown">
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="cross" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Кроссовки</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="jeans" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Джинсы</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="bags" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Сумки</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="shirts" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Футболки</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="s-shots" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Свитшоты</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter-btn-wrapper">
+              <button class="filter-btn filter-dropdown" type="button">
+                Стиль
+                <svg
+                  width="30"
+                  height="15"
+                  viewBox="0 0 30 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_32_262)">
+                    <path
+                      d="M21.7752 3.06498L23.1002 4.39123L15.8789 11.615C15.7632 11.7314 15.6256 11.8238 15.4741 11.8869C15.3225 11.95 15.16 11.9824 14.9958 11.9824C14.8317 11.9824 14.6691 11.95 14.5176 11.8869C14.366 11.8238 14.2284 11.7314 14.1127 11.615L6.8877 4.39123L8.2127 3.06623L14.9939 9.84623L21.7752 3.06498Z"
+                      fill="black"
+                      fill-opacity="0.25"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_32_265">
+                      <rect
+                        width="15"
+                        height="30"
+                        fill="white"
+                        transform="translate(30 1.31134e-06) rotate(90)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="filter-btn__dropdown-wrapper inter">
+                <ul class="filter-btn__dropdown">
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="jap" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Япония</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="goth" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Готика</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="min" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Минимализм</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="vintage" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Винтаж</span>
+                    </label>
+                  </li>
+                  <li class="filter-btn__dropdown-item">
+                    <label class="checkbox">
+                      <input type="checkbox" name="street" >
+                      <span class="checkbox-square">
+                        <svg
+                          width="17"
+                          height="13"
+                          viewBox="0 0 17 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      <span>Уличный</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img
+              src="./images/японскиистиль.jpg"
+              alt="Самурай"
+              class="portfolio-img"
+            >
+            <p class="portfolio-label">Самурай</p>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="./images/человек-паук.jpg"
+              alt="Человек-паук"
+              class="portfolio-img"
+            >
+            <p class="portfolio-label">Человек-паук</p>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="./images/568e960d7f1a5272ac944faca722e968.jpg"
+              alt="Цветочная тематика"
+              class="portfolio-img"
+            >
+            <p class="portfolio-label">Цветочная тематика</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="./images/моана.png" alt="Моана" class="portfolio-img" >
+            <p class="portfolio-label">Моана</p>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="./images/бэтмен.png"
+              alt="Бэтмен"
+              class="portfolio-img"
+            >
+            <p class="portfolio-label">Бэтмен</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="./images/аркеин.png" alt="Аркейн" class="portfolio-img" >
+            <p class="portfolio-label">Аркейн</p>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="./images/звезды.jpg"
+              alt="Звёзды"
+              class="portfolio-img"
+            >
+            <p class="portfolio-label">Звёзды</p>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="./images/джордан.jpg"
+              alt="Michael Jordan"
+              class="portfolio-img"
+            >
+            <p class="portfolio-label">Michael Jordan</p>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="./images/питер.jpg"
+              alt="Санкт-Петербург"
+              class="portfolio-img"
+            >
+            <p class="portfolio-label">Санкт-Петербург</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-block">
+          <div class="footer-logo-section">
+            <h3 class="footer-logo">lin.custom</h3>
+            <p class="footer-tagline">
+              Дополни свой стиль крутыми кастомами от нас.
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="social-icon"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17 3.5a.5.5 0 0 0-.5-.5H14a4.77 4.77 0 0 0-5 4.5v2.7H6.5a.5.5 0 0 0-.5.5v2.6a.5.5 0 0 0 .5.5H9v6.7a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-6.7h2.62a.5.5 0 0 0 .49-.37l.72-2.6a.5.5 0 0 0-.48-.63H13V7.5a1 1 0 0 1 1-.9h2.5a.5.5 0 0 0 .5-.5Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-icon"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+                  />
+                </svg>
+              </a>
+              <a href="https://x.com" target="_blank" class="social-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="social-icon"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="currentColor">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.51 8.796v1.697a3.74 3.74 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766c-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483a1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.6 1.6 0 0 1 1.6 1.606"
+                      clip-rule="evenodd"
+                    />
+                    <path d="M7.2 8.809H4V19.5h3.2z" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-block">
+          <div class="footer-links">
+            <a href="#" class="footer-link" id="studio">Студия</a>
+            <a href="./about.html" class="footer-link">О нас</a>
+            <a href="./contacts.html" class="footer-link">Свяжитесь с нами</a>
+            <a href="#" class="footer-link">Поддержка</a>
+            <a href="#" class="footer-link">Вакансии</a>
+          </div>
+        </div>
+
+        <div class="footer-block">
+          <div class="footer-links">
+            <a href="#" class="footer-link" id="info">Правовая информация</a>
+            <a href="#" class="footer-link">Условия использования</a>
+            <a href="#" class="footer-link">Политика<br >конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="portfolio-popup" id="portfolioPopup" style="display: none">
+      <div class="popup-content">
+        <button class="popup-close" id="popupCloseBtn" aria-label="Закрыть">
+          <svg height="32" width="32" viewBox="0 0 24 24">
+            <path
+              fill="#111"
+              d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59L7.11 5.7a1 1 0 0 0-1.41 1.41L10.59 12l-4.89 4.88a1 1 0 1 0 1.41 1.41L12 13.41l4.88 4.88a1 1 0 0 0 1.41-1.41L13.41 12l4.88-4.88a1 1 0 0 0 .01-1.41z"
+            />
+          </svg>
+        </button>
+        <div class="popup-grid">
+          <div class="popup-image-wrap">
+            <img
+              src="./images/японскиистиль.jpg"
+              alt="Самурай"
+              class="popup-img"
+            >
+          </div>
+          <div class="popup-info">
+            <div>
+              <h2 class="popup-title inter">Самурай</h2>
+              <p class="popup-price">от 5000 руб</p>
+              <div class="popup-description">
+                Встречайте кастом, от которого закипает кровь!
+                Японский демон, где каждая линия его красного тела — это ярость,
+                а проявленный белый скелет — его несокрушимая сущность.
+                Хватит носить скучное, пора зажечь! <br >Роспись сделана специальными красками по ткани, 
+                они не затвердевают "панцирем", не трескаются и выдерживают стирки. 
+                Демон останется с вами надолго! <br >Вся работа выполнена вручную - мастер @fedko_eva
+              </div>
+            </div>
+            <button class="popup-order inter">Оформить заказ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-popup inter" id="orderPopup" style="display: none">
+      <div class="order-popup-content">
+        <h2 class="order-popup-title">Ваш заказ:</h2>
+        <div class="order-items">
+          <div class="order-item">
+            <img
+              src="./images/японскиистиль.jpg"
+              alt="Самурай"
+              class="order-item-img"
+            >
+            <div class="order-item-info">
+              <span class="order-item-title inter">Самурай</span>
+              <span class="order-item-price inter">5000 руб.</span>
+            </div>
+          </div>
+          <div class="order-item">
+            <img
+              src="./images/сеилормун.jpg"
+              alt="Сейлор Мун"
+              class="order-item-img"
+            >
+            <div class="order-item-info">
+              <span class="order-item-title inter">Сейлор Мун</span>
+              <span class="order-item-price inter">3000 руб.</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-total-wrap">
+          <span class="order-total-label inter">Общая сумма:</span>
+          <span class="order-total-value inter">8000 руб.</span>
+        </div>
+        <form class="order-form">
+          <label class="inter">
+            Имя Фамилия
+            <input type="text" class="order-input" name="name" >
+          </label>
+          <label class="inter">
+            Номер телефона
+            <input type="text" class="order-input" name="phone" >
+          </label>
+        </form>
+        <div class="order-popup-buttons">
+          <button type="button" class="order-popup-cancel inter">Отмена</button>
+          <button type="submit" class="order-popup-submit inter">
+            Отправить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="thank-popup" id="thankPopup" style="display: none">
+      <div class="thank-popup-content">
+        <button
+          class="thank-popup-close"
+          id="thankCloseBtn"
+          aria-label="Закрыть"
+        >
+          <svg height="44" width="44" viewBox="0 0 24 24">
+            <path
+              fill="#fff"
+              d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59L7.11 5.7a1 1 0 0 0-1.41 1.41L10.59 12l-4.89 4.88a1 1 0 1 0 1.41 1.41L12 13.41l4.88 4.88a1 1 0 0 0 1.41-1.41L13.41 12l4.88-4.88a1 1 0 0 0 .01-1.41z"
+            />
+          </svg>
+        </button>
+        <h2 class="thank-title inter">Спасибо за заказ!</h2>
+        <p class="thank-description inter">
+          Ваша заявка в обработке. Наш менеджер свяжется<br >с Вами в ближайшее
+          время.
+        </p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./scripts/portfolio.js"></script>
+  </body>
+</html>
